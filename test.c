@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 
 void interpret_keycode(char*);
 void write_string(char*);
@@ -51,7 +52,27 @@ void win_plus_char(char letter) {
 	printf("\%W\%%c\%W\% ", letter);
 }
 void enter() {
-	printf("\%ENTER\% ");
+	char ch;
+	//infinite loop
+	while(1)
+	{
+		printf("Enter any character: ");
+		//reads a single character
+		ch=fgetc(stdin);
+		
+		if(ch==0x0A)// hex eq of ENTER KEY
+		{
+			printf("ENTER KEY is pressed.\n");
+			break;
+		}
+		else
+		{
+			printf("%c is pressed.\n",ch);
+		}
+		ch=getchar();
+	}
+	return 0;
+
 }
 void arrow_key(char dir) {
 	printf("\%A\%%c\%A\% ", dir);
