@@ -127,10 +127,11 @@ void win_plus_char(char letter) {
 void enter() {
   /*
     FUNCTION: This function simulates pressing the enter key.
-    INPUT: NONE
+    INPUT: letter(char)
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
+   bleKeyboard.press(0x28)
 }
 
 void arrow_key(char dir) {
