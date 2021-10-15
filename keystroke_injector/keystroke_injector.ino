@@ -122,7 +122,18 @@ void win_plus_char(char letter) {
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
-}
+   char ch;
+  if (ch>='A' && ch<='z')
+  {
+   bleKeyboard.press((0x23)+ch);
+   bleKeyboard.release((0x23)+ch);
+  }
+  else
+  {
+    bleKeyboard.press(0x00);
+  }
+
+
 
 void enter() {
   /*
@@ -142,4 +153,6 @@ void arrow_key(char dir) {
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
+  bleKeyboard.press((0x23)+ch);
+  
 }
