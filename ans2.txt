@@ -1,0 +1,1 @@
+%w%r%w% %P%cmd%P% %ENTER% %P%print("This should have started a python2 prompt on most linux machines")%P% %C%d%C%

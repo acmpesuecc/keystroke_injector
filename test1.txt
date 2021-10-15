@@ -1,0 +1,5 @@
+START
+WIN+r
+PR: notepad
+ENTER
+FIN

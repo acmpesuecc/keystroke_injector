@@ -1,0 +1,9 @@
+START
+WIN+r
+PR: cmd
+ENTER
+pr: python
+ENTER
+PR: print("This should have started a python2 prompt on most linux machines")
+CTRL+d
+FIN
