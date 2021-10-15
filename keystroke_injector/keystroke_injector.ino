@@ -89,12 +89,7 @@ void write_string(String string_to_print) {
 }
 
 void shift_plus_char(char letter) {
-  /*
-    FUNCTION: This function simulates pressing a letter key (not a special key) and shift simultaneously.
-    INPUT: letter (char)
-    OUTPUT: NONE
-  */
-  /*YOUR CODE GOES HERE*/
+  SHIFT+letter;
 }
 
 void ctrl_plus_char(char letter) {
