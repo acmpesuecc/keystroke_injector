@@ -104,6 +104,12 @@ void ctrl_plus_char(char letter) {
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
+    char ch;
+  if(ch>='A' && ch>='z')
+  {
+    bleKeyboard.press("KEY_LEFT_CTRLch");
+    bleKeyboard.release("KEY_LEFT_CTRLch");
+  }
 }
 
 void ctrl_plus_shift_plus_char(char letter) {
@@ -122,6 +128,7 @@ void win_plus_char(char letter) {
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
+  
 }
 
 void enter() {
