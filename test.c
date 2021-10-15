@@ -51,8 +51,15 @@ void win_plus_char(char letter) {
 	printf("\%W\%%c\%W\% ", letter);
 }
 void enter() {
-	printf("\%ENTER\% ");
+	 while (1) {
+      if (getchar() == '\n') {
+      printf("\%ENTER\%");
+      break;
+      }
+   }
+	
 }
 void arrow_key(char dir) {
 	printf("\%A\%%c\%A\% ", dir);
 }
+
