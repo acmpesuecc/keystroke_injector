@@ -1,4 +1,4 @@
-# This is a keystroke injector.
+# This is a keystroke injector.(ACCEPTS FIRST 5 PR'S DURING THE BOOST)
 Author: [Gallifrey](https://github.com/gall1frey)
 
 ## Why
