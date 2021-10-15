@@ -14,6 +14,8 @@ To inject keystrokes by emulating a bluetooth keyboard using a nodeMCU.
 2. But most probably you don't. That's okay. If you're working on implementing the keyboard functions, you only need to write the code, no testing required. Going through the library documentation should be enough.
 3. If you're working on the interpreter, plug your interpreter code into ```test.c``` and compare the output with the text in ```ans1.txt``` and ```ans2.txt```
 
+**Kindly note that ```test.c``` is just a program to test the interpreter you've written, if you've chosen to work on that issue. All other issues pertain to the ```.ino``` file.** 
+
 ## Is it beginner Friendly?
 Yes! 
 
