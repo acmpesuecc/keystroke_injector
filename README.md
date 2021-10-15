@@ -7,7 +7,7 @@ To inject keystrokes by emulating a bluetooth keyboard using a nodeMCU.
 ## Tech Stack
 * Arduino C++
 * C
-* (BLEkeyboard)[https://github.com/T-vK/ESP32-BLE-Keyboard] library
+* [BLEkeyboard](https://github.com/T-vK/ESP32-BLE-Keyboard) library
 
 ## How to Run
 1. If you have a NodeMCU and an SD card module, upload the sketch and run it. 
