@@ -97,12 +97,10 @@ void shift_plus_char(char letter) {
 }
 
 void ctrl_plus_char(char letter) {
-  /*
-    FUNCTION: This function simulates pressing a letter key (not a special key) and ctrl simultaneously.
-    INPUT: letter (char)
-    OUTPUT: NONE
-  */
-  /*YOUR CODE GOES HERE*/
+  bleKeyboard.press(ctrlKey);
+  ble.Keyboard.press(letter);
+  delay(100);
+  bleKeyboard.releaseAll()
 }
 
 void ctrl_plus_shift_plus_char(char letter) {
