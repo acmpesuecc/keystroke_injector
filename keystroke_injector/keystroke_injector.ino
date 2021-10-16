@@ -89,12 +89,11 @@ void write_string(String string_to_print) {
 }
 
 void shift_plus_char(char letter) {
-  /*
-    FUNCTION: This function simulates pressing a letter key (not a special key) and shift simultaneously.
-    INPUT: letter (char)
-    OUTPUT: NONE
-  */
-  /*YOUR CODE GOES HERE*/
+  bleKeyboard.press(0x10);
+  ble.Keyboard.press(letter);
+  delay(100);
+  bleKeyboard.releaseAll()
+  
 }
 
 void ctrl_plus_char(char letter) {
