@@ -103,6 +103,13 @@ void ctrl_plus_char(char letter) {
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
+  char ch;
+  if(ch>='A' && ch>='z')
+  {
+    bleKeyboard.press(KEY_LEFT_CTRL);
+    bleKeyboard.press(ch);
+    bleKeyboard.releaseAll();
+  }
 }
 
 void ctrl_plus_shift_plus_char(char letter) {
@@ -112,6 +119,14 @@ void ctrl_plus_shift_plus_char(char letter) {
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
+  char ch;
+  if(ch>='A' && ch>='z')
+  {
+    bleKeyboard.press(KEY_LEFT_CTRL);
+    bleKeyboard.press(KEY_LEFT_SHIFT);
+    bleKeyboard.press(ch);
+    bleKeyboard.releaseAll();
+  }
 }
 
 void win_plus_char(char letter) {
@@ -121,6 +136,13 @@ void win_plus_char(char letter) {
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
+  char ch;
+  if(ch>='A' && ch>='z')
+  {
+    bleKeyboard.press(KEY_LEFT_GUI);
+    bleKeyboard.press(ch);
+    bleKeyboard.releaseAll();
+  }
 }
 
 void enter() {
@@ -141,4 +163,9 @@ void arrow_key(char dir) {
     OUTPUT: NONE
   */
   /*YOUR CODE GOES HERE*/
+  bleKeyboard.press(KEY_UP_ARROW);
+  bleKeyboard.press(KEY_DOWN_ARROW);
+  bleKeyboard.press(KEY_LEFT_ARROW);
+  bleKeyboard.press(KEY_RIGHT_ARROW);
+  bleKeyboard.releaseAll();
 }
